@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500;600;700&family=Edu+SA+Beginner:wght@400;500;600;700&family=Inconsolata:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <form action="submit" id="form">
+        <input onclick type="text" id="input" />
+        <div id="result"></div>
+      </form>
+      <section class="container">
+        <button class="orange btn" id="clear-all">AC</button>
+        <button class="grey btn">(</button>
+        <button class="grey btn">)</button>
+        <button class="blue btn">÷</button>
+        <button class="blue btn">×</button>
+        <button class="orange btn">
+          <span class="material-symbols-outlined"> backspace </span>
+        </button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="blue btn">-</button>
+        <button class="grey btn">x<sup>y</sup></button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="blue btn">+</button>
+        <button class="grey btn">x!</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="equal orange btn" id="equal">=</button>
+        <button class="grey btn">⫪</button>
+        <button class="grey btn">e</button>
+        <button class="btn">0</button>
+        <button class="btn">,</button>
+      </section>
+    </main>
+    <script src="/src/main.js"></script>
+  </body>
+</html>
