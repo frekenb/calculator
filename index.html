@@ -19,37 +19,39 @@
   </head>
   <body>
     <main>
-      <form action="submit" id="form">
-        <input onclick type="text" id="input" />
-        <div id="result"></div>
+      <form action="submit" id="form" name="form">
+        <input onclick type="text" id="input" name="textview" />
+        <div id="result" readonly></div>
       </form>
       <section class="container">
-        <button class="orange btn" id="clear-all">AC</button>
-        <button class="grey btn">(</button>
-        <button class="grey btn">)</button>
-        <button class="blue btn">÷</button>
-        <button class="blue btn">×</button>
+        <button class="orange btn" id="clean-all" onclick="clean()">AC</button>
+        <button class="grey btn" onclick="insert('(')">(</button>
+        <button class="grey btn" onclick="insert(')')">)</button>
+        <button class="blue btn" onclick="insert('/')">÷</button>
+        <button class="blue btn" onclick="insert('*')">×</button>
         <button class="orange btn">
-          <span class="material-symbols-outlined"> backspace </span>
+          <span class="material-symbols-outlined" onclick="back()">
+            backspace
+          </span>
         </button>
-        <button class="btn">7</button>
-        <button class="btn">8</button>
-        <button class="btn">9</button>
-        <button class="blue btn">-</button>
+        <button class="btn" onclick="insert('7')">7</button>
+        <button class="btn" onclick="insert('8')">8</button>
+        <button class="btn" onclick="insert('9')">9</button>
+        <button class="blue btn" onclick="insert('-')">-</button>
         <button class="grey btn">x<sup>y</sup></button>
-        <button class="btn">4</button>
-        <button class="btn">5</button>
-        <button class="btn">6</button>
-        <button class="blue btn">+</button>
-        <button class="grey btn">x!</button>
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
+        <button class="btn" onclick="insert('4')">4</button>
+        <button class="btn" onclick="insert('5')">5</button>
+        <button class="btn" onclick="insert('6')">6</button>
+        <button class="blue btn" onclick="insert('+')">+</button>
+        <button class="grey btn" onclick="insert()">x!</button>
+        <button class="btn" onclick="insert('1')">1</button>
+        <button class="btn" onclick="insert('2')">2</button>
+        <button class="btn" onclick="insert('3')">3</button>
         <button class="equal orange btn" id="equal">=</button>
         <button class="grey btn">⫪</button>
         <button class="grey btn">e</button>
-        <button class="btn">0</button>
-        <button class="btn">,</button>
+        <button class="btn" onclick="insert('0')">0</button>
+        <button class="btn" onclick="insert('.')">,</button>
       </section>
     </main>
     <script src="/src/main.js"></script>
